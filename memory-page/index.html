@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>우리 가족의 이야기 | 디지털 추억 페이지</title>
+  <meta name="description" content="NFC 키링 태깅으로 열리는 디지털 추억 페이지 샘플입니다. 영상, 사진, 추억 메시지, 복원 전후 비교를 세로 스크롤로 담았습니다.">
+  <meta property="og:title" content="우리 가족의 이야기">
+  <meta property="og:description" content="NFC 키링 태깅으로 열리는 디지털 추억 페이지">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#f7f1e8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Gowun+Batang:wght@400;700&family=Noto+Sans+KR:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ============================================================
+       RE:VIDEO 디지털 추억 페이지 (샘플)
+       - NFC 태그에는 이 페이지의 URL을 등록합니다 (예: https://주소/memory-page/).
+       - [교체] 표시가 붙은 제목·날짜·문구·이미지·영상을 실제 콘텐츠로 바꿔 쓰세요.
+       - 현재 모든 콘텐츠는 데모용 샘플이며, 복원 전후 비교는 필터 예시입니다.
+       ============================================================ -->
+
+  <header class="hero" id="top">
+    <img class="hero__bg" src="assets/sample-hero.svg" alt="" aria-hidden="true">
+    <div class="hero__overlay" aria-hidden="true"></div>
+    <div class="hero__content">
+      <!-- [교체] 페이지 제목과 기록 날짜 -->
+      <p class="hero__eyebrow">Digital Memory</p>
+      <h1 class="hero__title">우리 가족의<br>이야기</h1>
+      <p class="hero__date">1998. 08. 14</p>
+      <p class="hero__badge">샘플 콘텐츠 데모 페이지</p>
+    </div>
+    <a class="hero__scroll" href="#message" aria-label="본문으로 스크롤">
+      <span class="hero__scroll-line" aria-hidden="true"></span>
+    </a>
+  </header>
+
+  <main>
+
+    <!-- 1. 추억 메시지 -->
+    <section class="section" id="message">
+      <div class="section__inner">
+        <p class="section__label reveal">Message</p>
+        <h2 class="section__title reveal">테이프 속에 잠들어 있던<br>우리의 하루</h2>
+        <!-- [교체] 추억 메시지 -->
+        <p class="message__text reveal">
+          오래된 비디오테이프 안에 남아 있던 여름날의 오후를
+          다시 꺼내 보았습니다. 화면 속 웃음소리와 바람 소리가
+          그대로 남아 있는 이 하루를, 이제는 손안에서 천천히
+          다시 감상할 수 있습니다.
+        </p>
+        <p class="message__sign reveal">— 샘플 메시지 —</p>
+      </div>
+    </section>
+
+    <!-- 2. 대표 영상 -->
+    <section class="section section--tint" id="video">
+      <div class="section__inner">
+        <p class="section__label reveal">Video</p>
+        <h2 class="section__title reveal">그날의 영상</h2>
+        <figure class="video reveal">
+          <div class="video__frame">
+            <!-- [교체] assets/sample-video.mp4 를 실제 복원 영상 파일로 교체 -->
+            <video
+              id="memory-video"
+              class="video__player"
+              src="assets/sample-video.mp4"
+              poster="assets/sample-hero.svg"
+              preload="metadata"
+              playsinline
+              controls
+            ></video>
+            <button class="video__play" id="video-play" type="button" aria-label="영상 재생">
+              <span class="video__play-icon" aria-hidden="true"></span>
+            </button>
+            <p class="video__tag">샘플 영상 (테스트 콘텐츠)</p>
+          </div>
+          <!-- [교체] 촬영 정보 -->
+          <figcaption class="video__caption">
+            촬영: 1998년 여름 · 가족 여행 (샘플 정보)
+          </figcaption>
+        </figure>
+        <div class="share">
+          <!-- [교체] 다운로드 링크: href 안의 영상 파일 경로를 실제 영상으로 바꾸면 됨 -->
+          <a class="btn btn--ghost" href="assets/sample-video.mp4" download="우리-가족의-이야기.mp4">영상 다운로드</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. 사진 갤러리 -->
+    <section class="section" id="gallery">
+      <div class="section__inner">
+        <p class="section__label reveal">Photos</p>
+        <h2 class="section__title reveal">사진으로 남은 순간들</h2>
+        <!-- [교체] 갤러리 사진 (assets/sample-1.svg ~ sample-4.svg) -->
+        <ul class="gallery reveal">
+          <li>
+            <button class="gallery__item" type="button"
+              data-full="assets/sample-1.svg" data-caption="바닷가에서 보낸 여름 (샘플)">
+              <img src="assets/sample-1.svg" alt="바닷가 샘플 사진" loading="lazy">
+            </button>
+          </li>
+          <li>
+            <button class="gallery__item" type="button"
+              data-full="assets/sample-2.svg" data-caption="함께 케이크를 켠 날 (샘플)">
+              <img src="assets/sample-2.svg" alt="생일 샘플 사진" loading="lazy">
+            </button>
+          </li>
+          <li>
+            <button class="gallery__item" type="button"
+              data-full="assets/sample-3.svg" data-caption="두 사람의 시작 (샘플)">
+              <img src="assets/sample-3.svg" alt="결혼식 샘플 사진" loading="lazy">
+            </button>
+          </li>
+          <li>
+            <button class="gallery__item" type="button"
+              data-full="assets/sample-4.svg" data-caption="늘 서 있던 우리 집 마당 (샘플)">
+              <img src="assets/sample-4.svg" alt="마당 샘플 사진" loading="lazy">
+            </button>
+          </li>
+        </ul>
+        <p class="note reveal">사진을 눌러 크게 볼 수 있습니다.</p>
+      </div>
+    </section>
+
+    <!-- 4. 복원 전 / 후 비교 -->
+    <section class="section section--tint" id="restore">
+      <div class="section__inner">
+        <p class="section__label reveal">Restore</p>
+        <h2 class="section__title reveal">복원 전 / 후</h2>
+        <p class="section__desc reveal">
+          영상 복원은 화질 개선과 색감 보정을 거쳐 진행됩니다.
+          아래는 화면을 좌우로 움직여 비교하는 기능의 데모입니다.
+        </p>
+
+        <div class="compare reveal" id="compare">
+          <img class="compare__img" src="assets/sample-restore.svg" alt="복원 후 예시 이미지">
+          <div class="compare__layer">
+            <img class="compare__img compare__img--before" src="assets/sample-restore.svg" alt="복원 전 예시 이미지">
+          </div>
+          <div class="compare__handle" aria-hidden="true">
+            <span class="compare__grip"></span>
+          </div>
+          <input class="compare__range" id="compare-range" type="range" min="0" max="100" value="50" step="1" aria-label="복원 전후 비교 위치 조절">
+          <span class="compare__label compare__label--before">복원 전</span>
+          <span class="compare__label compare__label--after">복원 후</span>
+        </div>
+
+        <p class="note reveal">
+          ※ 샘플 데모: 동일 이미지에 열화 필터를 적용한 예시이며, 실제 복원 결과가 아닙니다.
+        </p>
+      </div>
+    </section>
+
+    <!-- 5. 추억 타임라인 -->
+    <section class="section" id="timeline">
+      <div class="section__inner">
+        <p class="section__label reveal">Timeline</p>
+        <h2 class="section__title reveal">기억의 시간들</h2>
+        <!-- [교체] 타임라인 항목 -->
+        <ol class="timeline reveal">
+          <li class="timeline__item">
+            <p class="timeline__date">1998. 08</p>
+            <p class="timeline__title">가족 여행</p>
+            <p class="timeline__desc">바닷가에서 보낸 여름날의 오후 (샘플)</p>
+          </li>
+          <li class="timeline__item">
+            <p class="timeline__date">2001. 04</p>
+            <p class="timeline__title">다섯 번째 생일</p>
+            <p class="timeline__desc">초를 함께 끄던 저녁 (샘플)</p>
+          </li>
+          <li class="timeline__item">
+            <p class="timeline__date">1994. 05</p>
+            <p class="timeline__title">두 사람의 결혼식</p>
+            <p class="timeline__desc">가족이 모두 모였던 날 (샘플)</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- 6. 공유 및 안내 -->
+    <section class="section section--tint" id="share">
+      <div class="section__inner">
+        <p class="section__label reveal">Share</p>
+        <h2 class="section__title reveal">함께 보고 싶다면</h2>
+        <p class="section__desc reveal">
+          이 페이지는 NFC 키링을 스마트폰에 태그하면 열립니다.
+          가족에게 링크를 공유해 함께 감상할 수 있습니다.
+        </p>
+        <div class="share reveal">
+          <button class="btn" id="share-btn" type="button">페이지 공유하기</button>
+          <button class="btn btn--ghost" id="copy-btn" type="button">링크 복사</button>
+        </div>
+        <p class="note reveal">
+          다운로드 버튼은 현재 누구나 저장할 수 있는 열린 링크입니다. 비공개 설정·다운로드 권한 관리는 별도의 접근 권한 설계가 필요한 기능입니다.
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p class="footer__brand">RE:VIDEO</p>
+    <p class="footer__text">아날로그 영상 복원 · 디지털 추억 페이지 · NFC 굿즈</p>
+    <p class="footer__note">
+      NFC 태그에는 영상 파일이 아니라 이 페이지의 URL이 저장됩니다.<br>
+      현재 페이지는 기능 검증용 샘플이며 모든 콘텐츠는 테스트용입니다.
+    </p>
+  </footer>
+
+  <!-- 사진 확대 보기 -->
+  <div class="lightbox" id="lightbox" hidden>
+    <div class="lightbox__backdrop" data-lightbox-close></div>
+    <figure class="lightbox__figure">
+      <img class="lightbox__img" id="lightbox-img" src="" alt="">
+      <figcaption class="lightbox__caption" id="lightbox-caption"></figcaption>
+    </figure>
+    <button class="lightbox__btn lightbox__btn--close" type="button" data-lightbox-close aria-label="닫기">×</button>
+    <button class="lightbox__btn lightbox__btn--prev" id="lightbox-prev" type="button" aria-label="이전 사진">‹</button>
+    <button class="lightbox__btn lightbox__btn--next" id="lightbox-next" type="button" aria-label="다음 사진">›</button>
+  </div>
+
+  <button class="to-top" id="to-top" type="button" aria-label="맨 위로">↑</button>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

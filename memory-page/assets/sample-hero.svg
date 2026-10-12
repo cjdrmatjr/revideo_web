@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1600" role="img" aria-label="샘플 표지 이미지">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2c2118"/>
+      <stop offset="0.55" stop-color="#8c6b4f"/>
+      <stop offset="1" stop-color="#d9b38c"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.42" r="0.5">
+      <stop offset="0" stop-color="#f3d9b8" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#f3d9b8" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="1600" fill="url(#sky)"/>
+  <circle cx="600" cy="640" r="360" fill="url(#glow)"/>
+  <circle cx="600" cy="640" r="150" fill="#f6e3c8" opacity="0.9"/>
+  <path d="M0 1180 L260 1010 L470 1150 L720 940 L980 1130 L1200 1020 L1200 1600 L0 1600 Z" fill="#4a3826" opacity="0.85"/>
+  <path d="M0 1330 L300 1210 L560 1330 L820 1200 L1200 1330 L1200 1600 L0 1600 Z" fill="#302418"/>
+  <g opacity="0.14" stroke="#f6e3c8" stroke-width="2">
+    <line x1="0" y1="200" x2="1200" y2="200"/>
+    <line x1="0" y1="400" x2="1200" y2="400"/>
+    <line x1="0" y1="600" x2="1200" y2="600"/>
+    <line x1="0" y1="800" x2="1200" y2="800"/>
+  </g>
+  <text x="60" y="1540" font-family="Helvetica, Arial, sans-serif" font-size="42" fill="#f6e3c8" opacity="0.55">샘플 이미지 (표지 자리)</text>
+</svg>

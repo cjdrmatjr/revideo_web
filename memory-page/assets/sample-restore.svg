@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-label="샘플 사진: 복원 전후 비교용">
+  <defs>
+    <linearGradient id="field" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#cfe3ea"/>
+      <stop offset="1" stop-color="#e9e0bd"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#field)"/>
+  <circle cx="920" cy="200" r="110" fill="#fdf6e0"/>
+  <path d="M0 560 L220 420 L430 540 L650 400 L880 540 L1200 430 L1200 900 L0 900 Z" fill="#a8bb87"/>
+  <path d="M0 680 L300 580 L620 690 L920 590 L1200 680 L1200 900 L0 900 Z" fill="#87a26a"/>
+  <g>
+    <g transform="translate(420,520)">
+      <circle cx="0" cy="0" r="34" fill="#3d3022"/>
+      <rect x="-32" y="34" width="64" height="150" rx="28" fill="#3d3022"/>
+    </g>
+    <g transform="translate(540,540)">
+      <circle cx="0" cy="0" r="30" fill="#4a3a29"/>
+      <rect x="-28" y="30" width="56" height="132" rx="24" fill="#4a3a29"/>
+    </g>
+    <g transform="translate(650,560)">
+      <circle cx="0" cy="0" r="24" fill="#57432e"/>
+      <rect x="-22" y="24" width="44" height="104" rx="20" fill="#57432e"/>
+    </g>
+    <g transform="translate(750,548)">
+      <circle cx="0" cy="0" r="27" fill="#4a3a29"/>
+      <rect x="-25" y="27" width="50" height="118" rx="22" fill="#4a3a29"/>
+    </g>
+  </g>
+  <text x="60" y="850" font-family="Helvetica, Arial, sans-serif" font-size="42" fill="#2f2a1e" opacity="0.45">샘플 사진 (복원 비교 자리)</text>
+</svg>

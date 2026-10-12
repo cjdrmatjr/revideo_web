@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1200" role="img" aria-label="샘플 사진: 결혼식">
+  <defs>
+    <linearGradient id="hall" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8d7461"/>
+      <stop offset="1" stop-color="#e2c7a4"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="1200" fill="url(#hall)"/>
+  <path d="M280 1200 L280 520 Q 450 300 620 520 L620 1200 Z" fill="#f4e6d2" opacity="0.65"/>
+  <g fill="#c96f5c" opacity="0.85">
+    <circle cx="300" cy="560" r="34"/>
+    <circle cx="360" cy="520" r="30"/>
+    <circle cx="540" cy="520" r="30"/>
+    <circle cx="600" cy="560" r="34"/>
+  </g>
+  <g fill="#3b2c22">
+    <circle cx="400" cy="700" r="34"/>
+    <rect x="368" y="734" width="64" height="180" rx="26"/>
+    <circle cx="500" cy="700" r="34"/>
+    <rect x="468" y="734" width="64" height="180" rx="26"/>
+  </g>
+  <rect y="940" width="900" height="260" fill="#6d5642"/>
+  <text x="50" y="1140" font-family="Helvetica, Arial, sans-serif" font-size="40" fill="#f4e6d2" opacity="0.6">샘플 사진 3</text>
+</svg>
